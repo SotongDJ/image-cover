@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Custom Player Cover Bar</title>
+<meta name="color-scheme" content="dark light" />
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+<div>
+<p>title:</p>
+<p><input type="text" id="title" class="base"/></p>
+<p>artist:</p>
+<p><input type="text" id="artist" class="base"/></p>
+<p>album:</p>
+<p><input type="text" id="album" class="base"/></p>
+<hr/>
+<p>image url/base64: ( <a href="https://www.base64-image.de/" target="base64">https://www.base64-image.de/</a> )</p>
+<p><input type="text" id="base" value="image.png" class="base"/></p>
+<p>"image.png" source: <a href="https://深海墨客.台灣/2022/07/13/MJ4_OldOakForestTrail/">https://深海墨客.台灣/2022/07/13/MJ4_OldOakForestTrail/</a></p>
+<p>img_size:</p>
+<p><input type="text" id="img_size" value="768x384" class="base"/></p>
+<p>img_type:</p>
+<p><input type="text" id="img_type" value="image/png" class="base"/></p>
+<p><a href="javascript: void(doUpdate())">Update</a></p>
+<hr/>
+<p><img id="preview"/></p>
+<hr/>
+<p><audio id="player" preload="metadata" src="audio.mp3" controls=""></audio></p>
+<p>Audio source: <a href="https://github.com/anars/blank-audio">https://github.com/anars/blank-audio</a></p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
